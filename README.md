@@ -41,7 +41,7 @@ Budget tracking application with offline functionality.
 
 ## <a id="sample"></a>Visit the App deployed on Heroku
 
-* [Link to Deployed Application](https://dry-woodland-30443.herokuapp.com/)
+* [Link to Deployed Application](https://stark-reaches-88697.herokuapp.com/)
 
 ## <a id="installation"></a>Installation
 
