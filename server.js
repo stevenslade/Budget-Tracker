@@ -15,11 +15,14 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// added unified topology to conform to new standard and stop errors
-mongoose.connect("mongodb://localhost/budget", {
+// set-up for atlas
+mongoose.connect( 
+  process.env.MONGODB_URI || "mongodb://localhost/budget", 
+  {
   useNewUrlParser: true,
   useFindAndModify: false,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 // routes
