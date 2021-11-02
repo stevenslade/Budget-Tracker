@@ -15,9 +15,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+// added unified topology to conform to new standard and stop errors
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 // routes
